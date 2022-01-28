@@ -1,0 +1,178 @@
+* {
+    background-color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.big-box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1b1b;
+}
+
+.compu {
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.compu i {
+    color: #ddd;
+    background-color: transparent;
+    font-size: 80px;
+    margin: 10px;
+    transition-property: color, text-shadow;
+    transition-duration: .2s;
+    animation-name: nada;
+    animation-duration: .5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.usuario {
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    animation-name: nada;
+    animation-duration: 1s;
+    animation-direction: normal;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    display: none;
+}
+.usuario button {
+    background-color: transparent;
+    border: none;
+}
+
+.usuario i {
+    color: #ddd;
+    background-color: transparent;
+    font-size: 80px;
+    margin: 10px;
+    transition-property: color, text-shadow, transform;
+    transition-duration: .2s;
+}
+
+.usuario i:hover {
+    color: #f2f2f2;
+    text-shadow: -10px 10px #00000091;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.contador{
+    animation-name: nada;
+    animation-duration: .5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    position: absolute;
+    font-size: 100px;
+    color: #f2f2f2;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+.botoniniciar-container {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.botoniniciar-container input {
+    color: #f2f2f2;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    font-size: 20px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: .5s;
+    animation-name: nada;
+    animation-duration: .5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.botoniniciar-container h2 {
+    position: absolute;
+    bottom: 250px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 50px;
+    animation-name: nada;
+    animation-duration: .5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.botoniniciar-container h3 {
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    animation-name: nada;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+input:hover {
+    background-color: #f2f2f2;
+    color: #1b1b1b;
+    box-shadow: -10px 10px #00000042;
+    cursor: pointer;
+}
+.h3cambia{
+    user-select: none;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+@keyframes agrandar {
+    from {
+        font-size: 10px;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+
